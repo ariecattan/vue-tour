@@ -84,7 +84,7 @@ export default {
   data () {
     return {
       hash: sum(this.step.target),
-      targetElement: document.querySelector(this.step.target)
+      targetElement: document.getElementsByTagName('cdc-tool')[0].shadowRoot(this.step.target)
     }
   },
   computed: {

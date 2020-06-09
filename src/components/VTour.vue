@@ -45,8 +45,6 @@
 <script>
 import { DEFAULT_CALLBACKS, DEFAULT_OPTIONS, KEYS } from '../shared/constants'
 
-alert('Did this modification work')
-
 export default {
   name: 'v-tour',
   props: {
