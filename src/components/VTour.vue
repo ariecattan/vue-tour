@@ -45,7 +45,6 @@
 <script>
 import { DEFAULT_CALLBACKS, DEFAULT_OPTIONS, KEYS } from '../shared/constants'
 
-alert("Did this modification work");
 export default {
   name: 'v-tour',
   props: {
@@ -116,6 +115,7 @@ export default {
     start (startStep) {
       // Wait for the DOM to be loaded, then start the tour
       setTimeout(() => {
+        alert("Did this modification work");
         this.customCallbacks.onStart()
         this.currentStep = typeof startStep !== 'undefined' ? parseInt(startStep, 10) : 0
       }, this.customOptions.startTimeout)
