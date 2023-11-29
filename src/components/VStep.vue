@@ -84,7 +84,7 @@ export default {
   data () {
     return {
       hash: sum(this.step.target),
-      targetElement: document.getElementsByTagName('co-refi')[0].shadowRoot.querySelector(this.step.target)
+      targetElement: document.getElementsByTagName('champ-app')[0].shadowRoot.querySelector(this.step.target)
     }
   },
   computed: {
